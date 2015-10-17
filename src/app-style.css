@@ -1,0 +1,94 @@
+h1 {
+    font-size: 1.5em;
+}
+
+.u-alone-block {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+canvas {
+    cursor: pointer;
+}
+
+canvas:active {
+    cursor: move;
+}
+
+noscript {
+    background: #1B9CA6;
+    color: #fff;
+    font: bold 14px monospace;
+    height: 100%;
+    text-align: center;
+    padding-top: 60px;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+}
+
+#fractal-info-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.fractal-ui {
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: solid 1px #333;
+    color: #fff;
+    max-width: 300px;
+}
+
+#mandelbrot-zoom-message {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    padding: 20px 40px;
+    display: none;
+}
+
+#fail-message {
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    margin-left: -200px;
+    padding: 20px 40px;
+    text-align: center;
+    display: none;
+    width: 400px;
+}
+
+#fractal-info {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+#fractal-info a {
+    color: #fff;
+}
+
+#fractal-info a:hover {
+    color: #1B9CA6;
+}

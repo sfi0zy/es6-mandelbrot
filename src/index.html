@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mandelbrot Set - sfi0zy</title>
+
+        <meta name="description" content="Fast Mandelbrot Set explorer written in Javascript">
+        <meta name="keywords" content="sfi0zy, html5, canvas, javascript, es6, ecmascript 2015" />
+
+        <link rel="canonical" href="http://sfi0zy.github.io/es6-mandelbrot/">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+        <link rel="stylesheet" href="app-style.min.css">
+
+        <!-- Google Analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,"script","http://www.google-analytics.com/analytics.js","ga");
+
+            ga("create", "UA-53893511-1", "auto");
+            ga("require", "displayfeatures");
+            ga("send", "pageview");
+        </script>
+    </head>
+    <body itemscope itemtype="http://schema.org/SoftwareApplication">
+        <!-- FULL SCREEN CANVAS -->
+        <canvas id="mandelbrot-canvas"></canvas>
+        <!-- END FULL SCREEN CANVAS -->
+        
+        
+        <!-- FRACTAL INFO -->
+        <div id="fractal-info-wrapper">
+            <div id="fractal-info" class="container fractal-ui">
+                <div class="row">
+                    <h1><span itemprop="name">Mandelbrot set</span></h1>
+                </div>
+                <div class="row">
+                    <div id="mandelbrot-cam-x" class="u-full-width"></div>
+                </div>
+                <div class="row">
+                    <div id="mandelbrot-cam-y" class="u-full-width"></div>
+                </div>
+                <div class="row">
+                    <div id="mandelbrot-zoom" class="u-full-width"></div>
+                </div>
+                <div class="row">
+                    <div id="mandelbrot-iter" class="u-full-width"></div>
+                </div>
+                <div class="row u-alone-block">
+                    <div id="mandelbrot-save" class="button button-primary">save to image</div>
+                </div>
+                <div class="row">
+                    <a href="">
+                        <div class="button button-primary">see on github</div>
+                    </a>
+                </div>
+                <div class="row">
+                    <p class="u-full-width"><br>This is an <span itemprop="applicationCategory">experimental renderer</span> of Mandelbrot Set written in ES6. It works in <span itemprop="operatingSystem">modern desktop browsers (Google Chrome recommended)</span>. Click + drag with Your mouse or use arrow keys to move. Use mouse wheel or "W" and "S" keys to zoom.</p>
+                </div>
+            </div>
+        </div>
+        <!-- END FRACTAL INFO -->
+        
+        
+        <!-- MAX ZOOM MESSAGE -->
+        <div id="mandelbrot-zoom-message" class="fractal-ui">Safe zoom limit reached. More zooming can crash Your browser!</div>
+        <!-- END MAX ZOOM MESSAGE -->
+        
+        
+        <!-- FAIL MESSAGE -->
+        <div id="fail-message"></div>
+        <!-- END FAIL MESSAGE -->
+        
+        
+        <!-- NOSCRIPT MESSAGE -->
+        <noscript>
+            <p>Your browser doesn`t support javascript.</p>
+            <p>Visit GitHub repository for more information: <a href="https://github.com/sfi0zy/es6-mandelbrot" target="_blank">https://github.com/sfi0zy/es6-mandelbrot</a></p>
+        </noscript>
+        <!-- END NOSCRIPT MESSAGE -->
+        
+        
+        <!-- SCRIPTS -->
+        <script src="mandelbrot.min.js"></script>
+        <script src="app.min.js"></script>
+        <!-- END SCRIPTS -->
+    </body>
+</html>

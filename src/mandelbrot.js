@@ -141,7 +141,7 @@ class Mandelbrot {
 
 
     setNumberOfIterations() {
-        let realZoom = this.zoom / Mandelbrot.getDefaults.zoom
+        let realZoom = this.zoom / Mandelbrot.getDefaults().zoom
        
         if (Math.pow(2,32) - 1 < realZoom) {
             this.iterations = 16384
